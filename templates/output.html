@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <title>IVM Output</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <head>
+    <title>The Island Virtual Machine</title>
+  </head>
+  <body>
+    <h1>The Island Virtual Machine Snapshot</h1>
+    <p>{{ text }}</p>
+
+    <h2>Glimpse New Snapshot</h2>
+    <p>{{ generated_text }}</p>
+
+    <form method="GET" action="{{ url_for('original_page') }}">
+        <input type="submit" value="New Snapshot">
+    </form>
+
+  </body>
+</html>
